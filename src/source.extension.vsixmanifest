@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="8c84edc9-d235-4e8a-8a5d-02412e5b13a2" Version="1.0" Language="en-US" Publisher="Helder Sepulveda" />
+        <DisplayName>ExecuteXtOnSave</DisplayName>
+    <Description>Execute external aplication/script on save</Description>
+    <MoreInfo>https://github.com/heldersepu/ExecuteXtOnSave</MoreInfo>
+        <License>Resources\License.txt</License>
+        <Icon>Resources\logo.png</Icon>
+        <PreviewImage>Resources\preview.png</PreviewImage>
+    <Tags>external</Tags>
+    </Metadata>
+    <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+    </Installation>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    </Assets>
+</PackageManifest>
